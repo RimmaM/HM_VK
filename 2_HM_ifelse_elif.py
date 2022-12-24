@@ -11,6 +11,7 @@ usd_item = 'usd'
 usd_usd_rate = 1
 
 eur_item = 'eur'
+eur_item1 = 'eur1'
 usd_eur_rate = 0.86
 
 uah_item = 'uah'
@@ -88,5 +89,7 @@ if currency_convertor:
     elif target_currency == 'byn':
         currency_result = target_currency_amount * usd_byn_rate
         print(target_currency_amount, byn_item, ' = ', currency_result, usd_item, '\n')
+    else:
+        print('Unknow currency', '\n')
 else:
     print("Переменная currency_convertor = ", item_3, '\n')
